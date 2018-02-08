@@ -3,7 +3,7 @@ body {
 }
 
 #collage .hor {
-    height: 30vw;
+    height: 35vw;
     width: 100%;
 }
 
@@ -11,18 +11,7 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: top;
-}
-
-#collage .ver {
-    height: 60vw;
-    border-left: 4px dashed rgba(255, 255, 255, 0.452);
-}
-
-#collage .ver img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+    border-radius: 1em;
 }
 
 #collage {

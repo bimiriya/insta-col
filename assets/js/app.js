@@ -13,7 +13,7 @@ $(document).ready(() => {
   $('#pics img').height($('img').width());
 
   // borde entre los bloques más pequeños del collage
-  $('#collage .hor').first().css('border-bottom', '4px dashed rgba(255, 255, 255, 0.452)');
+  // $('#collage .hor').first().css('border-bottom', '4px dashed rgba(255, 255, 255, 0.452)');
   // asignar id a cada img dentro de la galería
 
   $('#gallery img').each(function(i, img) {
@@ -39,6 +39,10 @@ $('#signup').click(function() {
     promise.catch(e => alert(e.message));
   }
 });
+
+$('#logout').click(function() {
+  firebase.auth().signOut();
+})
 
 // DnD
 function drag(event) {

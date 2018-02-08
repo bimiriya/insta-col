@@ -30,6 +30,18 @@
 
 
   <div id="app">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" id="logout" class="navbar-toggle collapsed">
+                <i class="glyphicon glyphicon-off"></i>
+              </button>
+              <a class="navbar-brand" href="#">Insta Collage</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+
       <div class="container">
           <div id="collage">
             <div class="row">
@@ -46,7 +58,16 @@
                 </div>
               </div>
               <div class="col-xs-6">
-                <div class="ver" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="hor" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="hor" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
