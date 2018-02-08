@@ -7,15 +7,12 @@ $(document).ready(() => {
       $('#auth').show();
       $('#app').hide();
     }
-  });
+  }); // firebase
 
   // ajustar alto de imgs de galería
   $('#pics img').height($('img').width());
-
-  // borde entre los bloques más pequeños del collage
-  // $('#collage .hor').first().css('border-bottom', '4px dashed rgba(255, 255, 255, 0.452)');
+  
   // asignar id a cada img dentro de la galería
-
   $('#gallery img').each(function(i, img) {
     $(img).attr('id', 'pic' + i++);
   });
@@ -42,7 +39,7 @@ $('#signup').click(function() {
 
 $('#logout').click(function() {
   firebase.auth().signOut();
-})
+});
 
 // DnD
 function drag(event) {
