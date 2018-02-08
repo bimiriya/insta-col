@@ -1,0 +1,60 @@
+body {
+    background: black;
+}
+
+#collage .hor {
+    height: 30vw;
+    width: 100%;
+}
+
+#collage .hor img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#collage .ver {
+    height: 60vw;
+    border-left: 4px dashed rgba(255, 255, 255, 0.452);
+}
+
+#collage .ver img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#collage {
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+#pics img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    margin: 1em 0;
+}
+
+#auth {
+    background: white;
+    height: 100vh;
+    padding: 20vh 0;
+    width: 100%;
+}
+
+#auth input {
+    width: 100%;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    outline: none;
+}
+
+#auth button {
+    width: 100%;
+    margin: 0.3em 0;
+}

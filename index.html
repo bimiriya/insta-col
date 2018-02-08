@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Insta Collage</title>
+  <link rel="stylesheet" href="node_modules/bootstrap3/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <div id="auth">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <img src="assets/img/logo.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <input type="text" placeholder="Email" id="email">
+          <input type="password" placeholder="Password" id="pw">
+          <button class="btn btn-success" id="login">LOG IN</button>
+          <button class="btn btn-primary" id="signup">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="app">
+      <div class="container">
+          <div id="collage">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="hor" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="hor" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="ver" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <section id="gallery">
+          <div class="container">
+            <div id="divisor" class="text-center">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2>Gallery</h2>
+                </div>
+              </div>
+            </div>
+            <div id="pics">
+              <div class="row">
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_1.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_2.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_3.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_4.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_5.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_6.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_7.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_8.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                  <img draggable="true" ondragstart="drag(event)" src="assets/img/sample_9.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  </div>
+  
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDjEIQKWe-nPuWIgMh4hOa19bXdJu29ETs",
+      authDomain: "instacol-b5cc3.firebaseapp.com",
+      databaseURL: "https://instacol-b5cc3.firebaseio.com",
+      projectId: "instacol-b5cc3",
+      storageBucket: "instacol-b5cc3.appspot.com",
+      messagingSenderId: "845797736259"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
